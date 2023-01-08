@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Noa Zalsman CV</title>
+  <!-- #css style -->
+  <link rel="stylesheet" href="css/styles.css">
+
+<body>
+  <!-- navigation -->
+  <nav class="fill">
+    <ul>
+      <li><a href="#about-me">About me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#employment">Employment</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  
+  <!-- main -->
+  <div class="top-container">
+    <span class="name">
+      <h1>Noa Zalsman</h1>
+      <h2>Computer Science Student</h2>
+      <ul class="contact_buttons">
+        <li><a href="https://www.linkedin.com/in/noa-zalsman-4900b31b3"><img src="./images/contact/linkedin.png"></a></li>
+        <li><a href="https://www.facebook.com/noa.zalsman"><img src="./images/contact/facebook.png"></a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=noa.zalsman@gmail.com"><img src="./images/contact/email.png"></a></li>
+      </ul>
+    </span>
+  </div>
+
+  <!-- about me -->
+    <div class="profile" id="about-me">
+      <h2>ABOUT ME<br/><br/></h2>
+      <hr>
+      <p class="intro">A highly motivated and results-driven computer science student,<br/> 
+                      with a passion for problem-solving and a strong track record of academic success.<br/>
+                      Organized and detail-oriented, with a can-do attitude and a proven ability to handle multiple tasks effectively.</p>
+      <hr>
+    </div>
+  
+  <!-- education -->
+  <div class="education" id="education">
+    <h2>EDUCATION<br/><br/></h2>
+    <p class="intro">Bachelor of Computer Science (Second Year)</p>
+    <p class="intro"><b>GPA 95.69</b></p>
+    <ol>
+      <li class="">I am actively involved in a selective students' <b>full-stack development club</b>,<br/>
+                  where I have built a movie web app and an HTML website.<br/>
+                  My participation in this club has allowed me to develop my skills in full-stack development 
+                  and meet some great new friends.</li>
+      <li class="">I received an <b>excellence scholarship</b> from the company Monday and as a result,<br/>
+                   I am volunteering my time to assist with digital marketing efforts for the Clyf organization.</li>
+      <li class="">Calculus has been my <b>favorite course</b> so far.<br/>
+                   This course not only sparked my interest in higher-level math and its real-world applications,<br/>
+                  but it also opened my mind to deeper concepts of mathematics and taught me how to approach and solve complex problems.<br/>
+                  Overall, it was a challenging and rewarding experience.</li>
+    </ol>
+  </div>
+
+  <!-- hobbies -->
+  <div class="hobbies" id="hobbies">
+      <h2 class="header">HOBBIES<br/><br/></h2>
+      <div class="one-line">
+        <img class="line-left" src="images/ocean.png" height="70px" width="70px">
+        <span class="line-right">The beach on a sunny day is my favorite place to be.</span>
+      </div>
+    </br>
+      <div class="one-line">
+        <span class="line-left">Spending time with my wonderful friends and family.</span>
+        <img class="line-right" src="images/friends.png" height="75px" width="75px">
+      </div>
+    </br>
+      <div class="one-line">
+        <img class="line-left" src="images/globe.png" height="65px" width="65px">
+        <span class="line-right">Traveling around the world and experiencing the beauty of nature.</span>
+      </div>
+  </div>
+
+  <!-- quiz -->
+  <div class="quiz" id="quiz">
+    <h2>QUIZ</h2>
+  </div>
+
+   <!-- contact me -->
+   <div class="contact" id="contact">
+    <div class="fcf-body">
+      <div id="fcf-form">
+        <h2>CONTACT ME<br/><br/></h2>
+
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+              <label for="Phone" class="fcf-label">Your phone number</label>
+              <div class="fcf-input-group">
+                  <input type="tel" id="Phone" name="Phone" class="fcf-form-control">
+              </div>
+          </div>
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <p class="website-creater">© 2023 Noa Zalsman</p>
+  </div>
+  <!-- #javascript -->
+  <!-- Add here references to your JavaScript code -->
+</body>
+
+</html>

@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Noa Zalsman CV</title>
-  <!-- #css style -->
+  <!-- css  -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- javascript -->
+  <script src="javaScript/javaScript.js"></script>
+</head>
 
 <body>
   <!-- navigation -->
@@ -15,8 +18,8 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#hobbies">Hobbies</a></li>
       <li><a href="#employment">Employment</a></li>
-      <li><a href="#quiz">Quiz</a></li>
       <li><a href="#contact">Contact Me</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
     </ul>
   </nav>
 
@@ -27,9 +30,9 @@
       <h1>Noa Zalsman</h1>
       <h2>Computer Science Student</h2>
       <ul class="contact_buttons">
-        <li><a href="https://www.linkedin.com/in/noa-zalsman-4900b31b3"><img src="./images/contact/linkedin.png"></a></li>
-        <li><a href="https://www.facebook.com/noa.zalsman"><img src="./images/contact/facebook.png"></a></li>
-        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=noa.zalsman@gmail.com"><img src="./images/contact/email.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/noa-zalsman-4900b31b3"><img src="./images/contact/linkedin.png" width="47px" height="47px"></a></li>
+        <li><a href="https://github.com/noazalsman"><img src="./images/contact/github.png" width="47px" height="47px"></a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=noa.zalsman@gmail.com"><img src="./images/contact/email.png" width="47px" height="47px"></a></li>
       </ul>
     </span>
   </div>
@@ -47,19 +50,19 @@
   <!-- education -->
   <div class="education" id="education">
     <h2>EDUCATION<br/><br/></h2>
-    <p class="intro">Bachelor of Computer Science (Second Year)</p>
+    <p class="intro">Bachelor of Computer Science (Second Year) at Reichman University</p>
     <p class="intro"><b>GPA 95.69</b></p>
     <ol>
+      <li class="">I received an <b>excellence scholarship</b> from the company Monday and as a result,<br/>
+                   I am volunteering my time to assist with digital marketing efforts for the Clyf organization.</li>
       <li class="">I am actively involved in a selective students' <b>full-stack development club</b>,<br/>
                   where I have built a movie web app and an HTML website.<br/>
                   My participation in this club has allowed me to develop my skills in full-stack development 
                   and meet some great new friends.</li>
-      <li class="">I received an <b>excellence scholarship</b> from the company Monday and as a result,<br/>
-                   I am volunteering my time to assist with digital marketing efforts for the Clyf organization.</li>
-      <li class="">Calculus has been my <b>favorite course</b> so far.<br/>
-                   This course not only sparked my interest in higher-level math and its real-world applications,<br/>
-                  but it also opened my mind to deeper concepts of mathematics and taught me how to approach and solve complex problems.<br/>
-                  Overall, it was a challenging and rewarding experience.</li>
+      <li class="">I am attending the <b>Communication Division</b>,<br/>
+                  where I am receiving training in UX Design and Prodect Advertising.<br/>
+                  Through this program, I have completed full projects in both areas,<br/>
+                  gaining valuable experience in creating user-friendly designs and producing effective advertising campaigns.</li>
     </ol>
   </div>
 
@@ -82,9 +85,30 @@
       </div>
   </div>
 
-  <!-- quiz -->
-  <div class="quiz" id="quiz">
-    <h2>QUIZ</h2>
+  <!-- empoyment -->
+  <div class="employment" id="employment">
+    <h2>EMPLOYMENT<br/><br/></h2>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2020-2021</h2>
+          <p><b>INFLOW</b><br/>
+            Geographic Information Analyst<br/><br/>
+            Management of a geographic information system and visual intelligence in a real estate and solar startup.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2018-2020</h2>
+          <p><b>MILITARY SERVICE</b><br/>
+            Visual Intelligence Department Commander<br/><br/>
+            Visual intelligence integration. Data analysis and geographic DB management.<br/>
+            Visualizing information, graphic design, and website maintenance.<br/>
+            Leading and integrating a professional team, working on critical projects.<br/>
+            under pressure and presenting products to senior officers.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
    <!-- contact me -->
@@ -93,7 +117,7 @@
       <div id="fcf-form">
         <h2>CONTACT ME<br/><br/></h2>
 
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php" onsubmit="return validatePhoneNumber()">
             <div class="fcf-form-group">
                 <label for="Name" class="fcf-label">Your name</label>
                 <div class="fcf-input-group">
@@ -129,8 +153,6 @@
   <div class="bottom-container">
     <p class="website-creater">© 2023 Noa Zalsman</p>
   </div>
-  <!-- #javascript -->
-  <!-- Add here references to your JavaScript code -->
 </body>
 
 </html>

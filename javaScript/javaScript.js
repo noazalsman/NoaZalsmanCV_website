@@ -1,5 +1,12 @@
 "use strict";
 
+//scroll slowly
+function Scroll(id) {
+  event.preventDefault();
+  var element = document.getElementById(id); 
+  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 //checks that the phone number is in the right format
 function validatePhoneNumber() {
     let phone = document.getElementById("Phone").value;
@@ -61,4 +68,3 @@ function submitQuiz() {
     const results = document.getElementById("results");
     results.innerHTML = `You scored ${score} out of 4 <br> Correct answers: ${correctAnswers} <br> Incorrect answers: ${incorrectAnswers}`;
 }
-

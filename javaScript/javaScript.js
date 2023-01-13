@@ -1,13 +1,29 @@
 "use strict";
 
-//scroll slowly
+//SLOW SCROLL
 function Scroll(id) {
   event.preventDefault();
-  var element = document.getElementById(id); 
+  let element = document.getElementById(id); 
   element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-//checks that the phone number is in the right format
+
+//HAMBURGER NAVIGATION
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active")
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
+
+//PHONE NUMBER VALIDATION
 function validatePhoneNumber() {
     let phone = document.getElementById("Phone").value;
     // Regular expression to match most phone number formats
@@ -22,7 +38,7 @@ function validatePhoneNumber() {
 }
 
 
-//quiz
+//QUIZ
 function submitQuiz() {
     // get each answer score
     const question1 = document.querySelector('input[name="question1"]:checked').value;
@@ -66,5 +82,11 @@ function submitQuiz() {
 
     // display results
     const results = document.getElementById("results");
+    if(score == 4) {
+      results.style.backgroundColor = "#C8FF9E";
+    }
+    else {
+      results.style.backgroundColor = "#FFA78B";
+    }
     results.innerHTML = `You scored ${score} out of 4 <br> Correct answers: ${correctAnswers} <br> Incorrect answers: ${incorrectAnswers}`;
 }

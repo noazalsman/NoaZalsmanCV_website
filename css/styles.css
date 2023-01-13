@@ -102,6 +102,62 @@ nav.fill ul li a:hover:after {
     background: #333;
   }
 }
+
+/* hamburger */
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media(max-width:800px) {
+  #hamburger {
+    display: block;
+    float: left;
+    padding: 1.5%;
+  }
+
+  #hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 25px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  #nav-menu.active {
+    left: 0;
+  }
+}
+
 /* END NAVIGATION */
 
 
@@ -200,7 +256,6 @@ nav.fill ul li a:hover:after {
   border-radius: .3em;
   transition: .3s ease-out;
   text-align: left;
-  box-shadow: 4px 6px 6px #828282;
 }
 
 #education ol li:hover:before { /*transform: rotate(360deg);*/ transform: scale(1.1); transition: .3s ease-out;}
@@ -358,7 +413,6 @@ nav.fill ul li a:hover:after {
   position: relative;
   border-radius: 6px;
   color: white;
-  box-shadow: 4px 6px 6px #828282;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

@@ -7,7 +7,7 @@ Form Validation:
 2. In the html - The name, email and message fields are required.
 
 More JavaScript:
-1. The quiz page, is a few questions about me, when you press submit, you get your score and which questions were correct. (the background of the div depends on the score).
+1. The quiz page, is a few questions about me, when you press submit, you get your score and which questions were correct. (the background of the results div depends on the score).
 2. If you make your screen narrow, the nav bar becomes a nice hamburger menu.
 3. I used Javascript to make a smooth jump to the different sections in the page using the nav bar.
 
